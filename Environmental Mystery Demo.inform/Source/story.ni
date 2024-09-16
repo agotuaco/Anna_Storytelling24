@@ -14,4 +14,4 @@ The plunger is a thing on the counter in the Bathroom. The description of the pl
 
 [[The Living Room]]
 
-The Living Room is a room. The Living Room is west of the Bathroom. The description of the Living Room is "dusty and comforting."
+The Living Room is a room. The Living Room is west of the Bathroom. The description of the Living Room is "dusty and comfortin."
