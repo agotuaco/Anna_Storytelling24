@@ -35,6 +35,8 @@ The group picture is a thing on the bulletin board. The description is "The pict
 
 The South Cave is a room. The South Cave is south of the Work Station. "You enter the South Cave, but you are blocked by a locked gate. Past the gate, you see a small creature lying on the cave floor."
 
+The small creature is a thing. 
+
 
 
 
