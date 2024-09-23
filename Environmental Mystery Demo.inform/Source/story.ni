@@ -1,6 +1,7 @@
-"placeholder" by Anna Regina Gotuaco
+"Iron Canary" by Anna Regina Gotuaco
 
-Rock Count is a number that varies. Rock Count is 0. 
+
+Release along with interpreter.
 
 When play begins: 
 	say "These are instructions for the game. Insert exposition here.".
@@ -18,7 +19,15 @@ The table is an undescribed supporter in the Central Cave.
 The hammer is an undescribed thing on the table. 
 
 [[The Corridor]]
-The Corridor is a room north of the Central Cave.
+The Corridor is a room north of the Central Cave. "The Supply Closet is to the east. The Bedchambers are to the west."
+
+[[The Supply Closet]]
+The supply closet is a room east of the Corridor. 
+
+Instead of going to the Supply closet:
+	end the story saying "womp womp you died.".
+
+
 
 [[The Work Station]]
 The Work Station is a room. The Work Station is south of the Central Cave. "You enter the Work Station. Like the Central Cave, you are completely alone. There are echoes of past life here. Old work boots and hard hats litter the cave floor. A bucket of pickaxes sits in the corner of the room, but they look too heavy to pick up. There is a notice board tacked to the wall with several pieces of paper stuck to it. The sound is ringing to the south of the Work Station, beckoning you further in."
@@ -33,27 +42,34 @@ The group picture is a thing on the bulletin board. The description is "The pict
 
 [[South Cave]]
 
-The South Cave is a room. The South Cave is south of the Work Station. "You enter the South Cave, but you are blocked by a locked gate. Past the gate, you see a small creature lying on the cave floor."
+The South Cave is a room south of the Work Station. 
 
-The small creature is a thing. 
+Instead of going to the South Cave:
+	if the key is found:
+		now the South Cave is open;
+		continue the action;
+		say "You enter the South Cave. In the center of the room, you see a birdcage on a pedestal. Inside of it, you hear a bird.";
+	Otherwise:
+		say "You try to enter the South Cave, but you are blocked by a locked gate." instead.
 
 
 
 
 
 
-
+Test southcave with "w/l/s".
 
 
 
 [[KEY]]
+
 The key is an undescribed thing in the Cave. The key can be found. The key is not found. The description of the key is "An old-looking key."
 
 [[BOX]]
 The box is a closed openable container in the Bedroom. The description is "A closed box. Wonder what's in it?"
 
 Instead of opening the box:
-	if key is found:
+	if the key is found:
 		say "there's nothing else in the box." instead;
 	Otherwise:
 		now the box is open;
