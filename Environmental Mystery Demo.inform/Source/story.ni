@@ -7,6 +7,10 @@ When play begins:
 
 The Bedroom is a room. "You wake up in your bedroom, which is not truly a bedroom at all. Your so-called bed is a thin rubber mat on the dirt floor at the bottom of a small cave. A fake candle is bolted down in the of your room, basking the cave in a soft yellow glow. You hear a faint sound coming from somewhere outside of your room. You find it irritating. It seems to be coming from the Central Cave to the west." 
 
+The bed is an undescribed thing in the Bedroom. The description of the bed is "A thin black rubber mat. It's not the most comfortable, but it's better than sleeping on the dirt itself."
+
+The candle is an undescribed thing in the Bedroom. The description of the candle is "A battery-operated candle that's bolted down into the dirt. You are unable to take it."
+
 [[The Central Cave]]
 
 The Central Cave is a room. The Central Cave is west of the Bedroom. The description of the Central Cave is "You enter the Central Cave. It is completely deserted. To the far end of the room there is a false fireplace bolted to the ground, illuminating the You have vague memories of sitting around a fake fire and telling stories, but you are unsure if they are just dreams. There is an old, rickety table in the center of the room. A hammer rests on the table, its head coated in something rust-colored.  The sound you heard is getting faintly louder, but you still cannot distinguish what it is. There is a Corridor is to the north, while the Work Station is to the south."
@@ -16,7 +20,7 @@ The table is an undescribed supporter in the Central Cave.
 The hammer is an undescribed thing on the table. 
 
 [[The Corridor]]
-The Corridor is a room. The Corridor is north of the Central Cave. "You enter the Corridor. The Supply Closet is to the east. The Bedchambers are to the west."
+The Corridor is a room. The Corridor is north of the Central Cave. "You enter the Corridor, and your eyes take a moment to adjust to the lighting. Shadows warp around the slope of the cave walls and you must squint to . It The Supply Closet is to the east. The Bedchambers are to the west."
 
 [[The Supply Closet]]
 The Supply Closet is a room. The Supply Closet is east of the Corridor. 
@@ -35,15 +39,15 @@ The flashlight is an undescribed thing in the Cave. The flashlight can be found.
 [[Bedchambers]]
 The Bedchambers is a room. The Bedchambers is west of the Corridor. "You enter the Bedchambers to find it empty, but within it holds signs of past inhabitants. There are three rubber mats on the ground. One has a blanket, one has a pillow, and one has a journal. [if key is found] There's an old key on the floor. [end if]"
 
-The rubber mat is an undescribed supporter in the Bedchambers.
+The rubber mat is an undescribed supporter in the Bedchambers. 
 
-The blanket is an undescribed thing on the rubber mat. The description is "You pick up the blanket. It's frayed around the edges and rough to the touch. There's nothing remarkable about it."
+The blanket is an undescribed thing on the rubber mat. The description is "You pick up the blanket. It's frayed around the edges and rough to the touch. There's nothing remarkable about it. You put it back."
 
 [[KEY]]
 
 The key is an undescribed thing in the Bedchambers. The key can be found. The key is not found. The description of the key is "An old-looking key made of silver metal. There's an engraving at the base of the key's head."
 
-The pillow is an undescribed thing on the rubber mat. The description is "The pillow is worn and lumpy."
+The pillow is an undescribed thing on the rubber mat. The description is "The pillow is worn and lumpy. You see something silver poking out of the pillowcase."
 
 Instead of taking the pillow:
 	now the key is found;
@@ -55,7 +59,7 @@ The journal is a thing on the rubber mat. The description is "You pick up the jo
 [[The Work Station]]
 The Work Station is a room. The Work Station is south of the Central Cave. "You enter the Work Station. Like the Central Cave, you are completely alone. There are echoes of past life here. Old work boots and hard hats litter the cave floor. A bucket of pickaxes sits in the corner of the room. There is a bulletin board tacked to the wall with several pieces of paper stuck to it. The sound is ringing to the south of the Work Station, beckoning you further in."
 
-The work boots are an undescribed thing in the Work Station. The description is "A pair of old work boots. The soles are crusted with dirt and the sides are scuffed."
+The work boots are an undescribed thing in the Work Station. The description is "A pair of old work boots. The soles are crusted with dirt and the sides are scuffed. They look to be too big for you."
 
 Instead of taking the work boots:
 	say "Upon closer inspection, you see that they're much too big. You leave them behind."
@@ -75,7 +79,7 @@ The group picture is a thing on the bulletin board. The description is "The pict
 
 [[South Cave]]
 
-The South Cave is a room. The South Cave is south of the Work Station. 
+The South Cave is a room. The South Cave is south of the Work Station. "You enter.."
 
 Instead of going to the South Cave:
 	if the key is found:
