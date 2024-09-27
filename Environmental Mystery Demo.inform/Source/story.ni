@@ -19,8 +19,16 @@ The table is an undescribed supporter in the Central Cave.
 
 The hammer is an undescribed thing on the table. 
 
+The book is an undescribed thing on the table. The book can be found. The book is not found. The description is "An old book with weathered edges. The page is flipped open to a spread about canaries. A large illustration of a canary takes up half of the page, its faded wings spread wide in flight. On the opposite page, there is a section about the history of canaries in coal mines."
+
+Instead of taking the book:
+	now the book is found;
+	say "You find some useful information in the book and store it away for safekeeping.".
+
+
+
 [[The Corridor]]
-The Corridor is a room. The Corridor is north of the Central Cave. "You enter the Corridor, and your eyes take a moment to adjust to the lighting. Shadows warp around the slope of the cave walls and you must squint to . It The Supply Closet is to the east. The Bedchambers are to the west."
+The Corridor is a room. The Corridor is north of the Central Cave. "You enter the Corridor, and your eyes take a moment to adjust to the lighting. Shadows warp around the slope of the cave walls and you must squint to see your surroundings. You feel your way through the corridor, coming upon two entrances. The Supply Closet is to the east. The Bedchambers are to the west."
 
 [[The Supply Closet]]
 The Supply Closet is a room. The Supply Closet is east of the Corridor. 
@@ -39,9 +47,9 @@ The flashlight is an undescribed thing in the Cave. The flashlight can be found.
 [[Bedchambers]]
 The Bedchambers is a room. The Bedchambers is west of the Corridor. "You enter the Bedchambers to find it empty, but within it holds signs of past inhabitants. There are three rubber mats on the ground. One has a blanket, one has a pillow, and one has a journal. [if key is found] There's an old key on the floor. [end if]"
 
-The rubber mat is an undescribed supporter in the Bedchambers. 
+The rubber mat is an undescribed supporter in the Bedchambers. The description of the rubber mat is "A thin black rubber mat. It looks identical to the one you woke up on."
 
-The blanket is an undescribed thing on the rubber mat. The description is "You pick up the blanket. It's frayed around the edges and rough to the touch. There's nothing remarkable about it. You put it back."
+The blanket is an undescribed thing on the rubber mat. The description of the blanket is "You pick up the blanket. It's frayed around the edges and rough to the touch. There's nothing remarkable about it. You put it back."
 
 [[KEY]]
 
@@ -71,7 +79,7 @@ Instead of taking the pickaxe:
 
 The bulletin board is an undescribed supporter in the Work Station.
 
-The sticky note is a thing on the bulletin board. The description is "The sticky note says 'the birds, the birds, the birds...do not trust the birds...'".
+The sticky note is a thing on the bulletin board. The description is "The sticky note says 'the birds, the birds, the birds...do not trust the birds...'"
 
 The work schedule is a thing on the bulletin board. The description is "The work schedule has several names listed on it. There are no new entries past September 30. How long has it been since that day? You're not sure. Your head is feeling fuzzy, like it's wading through a fog of forgotten memories."
 
@@ -79,18 +87,26 @@ The group picture is a thing on the bulletin board. The description is "The pict
 
 [[South Cave]]
 
-The South Cave is a room. The South Cave is south of the Work Station. "You enter.."
+The South Cave is a room. The South Cave is south of the Work Station. "Using your key, you enter the South Cave. It is noticeably colder in this cave than it is in the other rooms. In the center of the room, you see a birdcage on a pedestal. Inside of it, you hear a bird."
 
 Instead of going to the South Cave:
 	if the key is found:
-		say "You enter the South Cave. In the center of the room, you see a birdcage on a pedestal. Inside of it, you hear a bird.";
 		continue the action;
 	Otherwise:
 		say "You try to enter the South Cave, but you are blocked by a locked gate." instead.
 		
+[[PEDESTAL]]
+
+The pedestal is an undescribed supporter in the South Cave. The description of the pedestal is "A pedestal made of metal cleanly soldered together. The base of."
+
+[[BIRDCAGE]]
+The birdcage is an undescribed thing on the pedestal. The description of the birdcage is "A golden birdcage sitting delicately atop a pedestal. A bird sits inside, singing. There is light at the bottom of the cage that cups the bird in a brilliant white shawl of luminesence."
+
 
 [[BIRD]]
-The bird is an undescribed closed openable container in the South Cave. The description is "it's a bird!"
+The bird is an undescribed closed openable container in the South Cave. The description is "You peer closer to get a better look at the bird. It is not made of feathers and bone, but instead of metal. [if book is found] The bird appears to be made in the likeness of a canary. [end if]"
+
+
 
 Instead of opening the bird:
 	if the screwdriver is found:
@@ -100,7 +116,7 @@ Instead of opening the bird:
 
 
 [[SCREWDRIVER]]
-The screwdriver is an undescribed thing in the Supply Closet. The screwdriver can be found. The screwdriver is not found. The description of the screwriver is "A gleaming screwdriver."
+The screwdriver is an undescribed thing in the Supply Closet. The screwdriver can be found. The screwdriver is not found. The description of the screwdriver is "A gleaming screwdriver."
 
 
 
@@ -109,5 +125,7 @@ test bird with "w/n/w/examine pillow/take pillow/take key/e/s/s/s/examine bird".
 Test journal with "w/n/w/examine journal"
 
 Test southcave with "w/l/s".
+
+Test pedestal with "w/n/w/examine pillow/take pillow".
 
 
