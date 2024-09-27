@@ -19,7 +19,7 @@ The table is an undescribed supporter in the Central Cave.
 
 The hammer is an undescribed thing on the table. 
 
-The book is an undescribed thing on the table. The book can be found. The book is not found. The description is "An old book with weathered edges. The page is flipped open to a spread about canaries. A large illustration of a canary takes up half of the page, its faded wings spread wide in flight. On the opposite page, there is a section about the history of canaries in coal mines."
+The book is an undescribed thing on the table. The book can be found. The book is not found. The description is "An old book with weathered edges. The page is flipped open to a spread about canaries. A large illustration of a canary takes up half of the page, its faded wings spread wide in flight. On the opposite page, there is a section about the history of canaries in coal mines. Something about it tugs at your curiosity."
 
 Instead of taking the book: [[adds a little bit of context/extra dialogue for later discovery of the iron canaary]]
 	now the book is found;
@@ -57,7 +57,7 @@ The key is an undescribed thing in the Bedchambers. The key can be found. The ke
 
 The pillow is an undescribed thing on the rubber mat. The description is "The pillow is worn and lumpy. You see something silver poking out of the pillowcase."
 
-Instead of taking the pillow:
+Instead of taking the pillow: [[the important thing here is the key]]
 	now the key is found;
 	say "A key fell out of the pillow!" instead.
 
@@ -99,14 +99,21 @@ Instead of going to the South Cave:
 
 The pedestal is an undescribed supporter in the South Cave. The description of the pedestal is "A pedestal made of metal cleanly soldered together. The base of."
 
-[[BIRDCAGE]]
+[[BIRDCAGE]] [[how the FUCK do you put a container in a container???]] [[HELPPPPP]]
 
-The birdcage is an undescribed thing on the pedestal. The description of the birdcage is "A golden birdcage sitting delicately atop a pedestal. A bird sits inside, singing. There is light at the bottom of the cage that cups the bird in a brilliant white shawl of luminesence."
+The birdcage is an undescribed container on the pedestal. The birdcage is openable. The birdcage is closed. The description of the birdcage is "A golden birdcage sitting delicately atop a pedestal. A bird sits inside, singing. There is light at the bottom of the cage that cups the bird in a brilliant white shawl of luminesence."
 
 
 [[BIRD]]
 
-The bird is an undescribed closed openable container in the South Cave. The description is "You peer closer to get a better look at the bird. It is not made of feathers and bone, but instead of metal. [if book is found] The bird appears to be made in the likeness of a canary. [end if] Although its body is rigid and artificial, the bird is somehow still able to sing. The sweet, high pitched notes would be beautiful if they were not so grating on your ears. You turn the bird in your hands delicately-- you do not wish to break the machinery."
+A bird is in birdcage. The description is "You peer closer to get a better look at the bird. It is not made of feathers and bone, but instead of metal. [if book is found] The bird appears to be made in the likeness of a canary, just like the ones you saw in the book. [end if] Although its body is rigid and artificial, the bird is somehow still able to sing. The sweet, high pitched notes would be beautiful if they were not so grating on your ears. You turn the bird in your hands delicately-- you do not wish to break the machinery. Three screws catch your eye-- one at the top of each wing and one right on the bird's chest. Perhaps if you find a tool to unscrew it, "
+
+The bird is an undescribed closed openable container. 
+
+
+The box is a container in the South Cave. It is openable. It is closed.
+
+Shit is in box. The description is "Kill yourself."
 
 
 
