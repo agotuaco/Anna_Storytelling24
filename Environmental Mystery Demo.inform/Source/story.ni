@@ -21,7 +21,7 @@ The hammer is an undescribed thing on the table.
 
 The book is an undescribed thing on the table. The book can be found. The book is not found. The description is "An old book with weathered edges. The page is flipped open to a spread about canaries. A large illustration of a canary takes up half of the page, its faded wings spread wide in flight. On the opposite page, there is a section about the history of canaries in coal mines."
 
-Instead of taking the book:
+Instead of taking the book: [[adds a little bit of context/extra dialogue for later discovery of the iron canaary]]
 	now the book is found;
 	say "You find some useful information in the book and store it away for safekeeping.".
 
@@ -59,7 +59,7 @@ The pillow is an undescribed thing on the rubber mat. The description is "The pi
 
 Instead of taking the pillow:
 	now the key is found;
-	say "A key fell out of the pillow." instead.
+	say "A key fell out of the pillow!" instead.
 
 The journal is a thing on the rubber mat. The description is "You pick up the journal. The handwriting inside of it fits neatly within the lines of the paper. It reads, 'My days are numbered and my oxygen is dwindling. I should have listened when the canary cried. Four of my fellow workers have been swallowed up in the bellows of the caves and forever lost in the shadows. There are others, locked away in other caves. If there are any eyes left to read my dying words, read my words true. The canary is your savior and your lifeline.'"
 
@@ -100,11 +100,13 @@ Instead of going to the South Cave:
 The pedestal is an undescribed supporter in the South Cave. The description of the pedestal is "A pedestal made of metal cleanly soldered together. The base of."
 
 [[BIRDCAGE]]
+
 The birdcage is an undescribed thing on the pedestal. The description of the birdcage is "A golden birdcage sitting delicately atop a pedestal. A bird sits inside, singing. There is light at the bottom of the cage that cups the bird in a brilliant white shawl of luminesence."
 
 
 [[BIRD]]
-The bird is an undescribed closed openable container in the South Cave. The description is "You peer closer to get a better look at the bird. It is not made of feathers and bone, but instead of metal. [if book is found] The bird appears to be made in the likeness of a canary. [end if]"
+
+The bird is an undescribed closed openable container in the South Cave. The description is "You peer closer to get a better look at the bird. It is not made of feathers and bone, but instead of metal. [if book is found] The bird appears to be made in the likeness of a canary. [end if] Although its body is rigid and artificial, the bird is somehow still able to sing. The sweet, high pitched notes would be beautiful if they were not so grating on your ears. You turn the bird in your hands delicately-- you do not wish to break the machinery."
 
 
 
