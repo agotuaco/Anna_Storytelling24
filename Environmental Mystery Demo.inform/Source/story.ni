@@ -13,35 +13,42 @@ The candle is an undescribed thing in the Bedroom. The description of the candle
 
 [[The Central Cave]]
 
-The Central Cave is a room. The Central Cave is west of the Bedroom. The description of the Central Cave is "You enter the Central Cave. It is completely deserted. To the far end of the room there is a false fireplace bolted to the ground, illuminating the You have vague memories of sitting around a fake fire and telling stories, but you are unsure if they are just dreams. There is an old, rickety table in the center of the room. A hammer rests on the table, its head coated in something rust-colored.  The sound you heard is getting faintly louder, but you still cannot distinguish what it is. There is a Corridor is to the north, while the Work Station is to the south."
+The Central Cave is a room. The Central Cave is west of the Bedroom. The description of the Central Cave is "You enter the Central Cave. It is completely deserted. To the far end of the room there is a false fireplace bolted to the ground, illuminating the walls with its imitation flames. You have vague memories of sitting around a fake fire and telling stories, but you are unsure if they are just dreams. There is an old, rickety table in the center of the room. A book rests on the table's surface. Across the room, you spot a safe tucked away in the corner. The sound you heard is getting faintly louder, but you still cannot distinguish what it is. There is a Corridor is to the north, while the Work Station is to the south."
 
-The table is an undescribed supporter in the Central Cave. 
+The table is an undescribed supporter in the Central Cave. The description is "An old table. It has seen better days."
 
-The hammer is an undescribed thing on the table. 
+The fireplace is an undescribed thing in the Central Cave. The description is "A fireplace made of metal. No heat radiates from its false fire, only light. It's bolted to the ground."
 
 The book is an undescribed thing on the table. The book can be found. The book is not found. The description is "An old book with weathered edges. The page is flipped open to a spread about canaries. A large illustration of a canary takes up half of the page, its faded wings spread wide in flight. On the opposite page, there is a section about the history of canaries in coal mines. Something about it tugs at your curiosity."
 
 Instead of taking the book: [[adds a little bit of context/extra dialogue for later discovery of the iron canaary]]
 	now the book is found;
 	say "You find some useful information in the book and store it away for safekeeping.".
+	
+The safe is an undescribed closed openable container in the Central Cave. The description is "A black rectangular safe. It's locked."
 
+Instead of opening the safe:
+	if sticky note is found:
+		now a flashlight is found;
+		say "You use the combination to open the safe.";
+	Otherwise:
+		say "You can't find a way to open the safe.".
+		
+
+A flashlight is in the safe. The flashlight can be found. The flashlight is not found.The description is "A silver flashlight".
 
 
 [[The Corridor]]
 The Corridor is a room. The Corridor is north of the Central Cave. "You enter the Corridor, and your eyes take a moment to adjust to the lighting. Shadows warp around the slope of the cave walls and you must squint to see your surroundings. You feel your way through the corridor, coming upon two entrances. The Supply Closet is to the east. The Bedchambers are to the west."
 
 [[The Supply Closet]]
-The Supply Closet is a room. The Supply Closet is east of the Corridor. 
+The Supply Closet is a room. The Supply Closet is east of the Corridor. "You click the flashlight on and shine it into the Supply Closet. Tentatively you step forward, one shaky foot in front of the other as the beam of light catches."
 
 Instead of going to the Supply Closet: [[too dark to enter, player must find flashlight]]
-	if the flashlight is found:
-		now the Supply Closet is open;
+	if a flashlight is found:
 		continue the action;
 		say "You beam your flashlight into the supply closet.";	Otherwise:
 		say "It's too dark to make your way through the Supply Closet. It would be too dangerous to go inside without a light source. You go back into the Corridor." instead.
-		
-[[FLASHLIGHT]]
-The flashlight is an undescribed thing in the Cave. The flashlight can be found. The flashlight is not found. The description of the flashlight is "A silver flashlight."
 		
 
 [[Bedchambers]]
@@ -76,10 +83,16 @@ The pickaxe are an undescribed thing in the Work Station. The description is "A 
 
 Instead of taking the pickaxe:
 	say "You attempt to pick up the pickaxe, but it's extremely heavy. You leave it be."
+	
+[[BULLETIN BOARD-- lots of exposition yippee!]]
 
 The bulletin board is an undescribed supporter in the Work Station.
 
-The sticky note is a thing on the bulletin board. The description is "The sticky note says 'the birds, the birds, the birds...do not trust the birds...'"
+The sticky note is a thing on the bulletin board. The sticky note can be found. The sticky note is not found. The description is "The sticky note says 'the birds, the birds, the birds...do not trust the birds...'. You see writing on the other side of the sticky note."
+
+Instead of taking the sticky note:
+	now the sticky note is found;
+	say "You flip the sticky note over. In neat handwriting, the note says 'Trust the Iron Canary' along with a string of numbers.".
 
 The work schedule is a thing on the bulletin board. The description is "The work schedule has several names listed on it. There are no new entries past September 30. How long has it been since that day? You're not sure. Your head is feeling fuzzy, like it's wading through a fog of forgotten memories."
 
@@ -97,7 +110,7 @@ Instead of going to the South Cave:
 		
 [[PEDESTAL]]
 
-The pedestal is an undescribed supporter in the South Cave. The description of the pedestal is "A pedestal made of metal cleanly soldered together. The base of."
+The pedestal is an undescribed supporter in the South Cave. The description of the pedestal is "A pedestal made of metal cleanly soldered together."
 
 [[BIRDCAGE]] [[how the FUCK do you put a container in a container???]] [[HELPPPPP]]
 
@@ -106,22 +119,19 @@ The birdcage is an undescribed container on the pedestal. The birdcage is openab
 
 [[BIRD]]
 
-A bird is in birdcage. The description is "You peer closer to get a better look at the bird. It is not made of feathers and bone, but instead of metal. [if book is found] The bird appears to be made in the likeness of a canary, just like the ones you saw in the book. [end if] Although its body is rigid and artificial, the bird is somehow still able to sing. The sweet, high pitched notes would be beautiful if they were not so grating on your ears. You turn the bird in your hands delicately-- you do not wish to break the machinery. Three screws catch your eye-- one at the top of each wing and one right on the bird's chest. Perhaps if you find a tool to unscrew it, "
-
-The bird is an undescribed closed openable container. 
-
-
-The box is a container in the South Cave. It is openable. It is closed.
-
-Shit is in box. The description is "Kill yourself."
-
-
+A bird is in birdcage. The description is "You peer closer to get a better look at the bird. It is not made of feathers and bone, but instead of metal. [if book is found] The bird appears to be made in the likeness of a canary, just like the ones you saw in the book you found in the Central Cave. [end if] Although its body is rigid and artificial, the bird is somehow still able to sing. The sweet, high pitched notes would be beautiful if they were not so grating on your ears. You turn the bird in your hands delicately. Three screws catch your eye-- one at the top of each wing and one right on the bird's chest. The bird's eyes are hollow, allowing you the slightest peek at the inner machinery. Something seems to be lodged inside the bird's metal body. Perhaps if you find a tool to unscrew the bird, you can find a way to take whatever's inside."
 
 Instead of opening the bird:
 	if the screwdriver is found:
 		say "You screw the bird apart and find a note." instead;
 	Otherwise:
-		say "There seems to be no way for you to open the bird." instead.
+		say "It seems you need a tool to open the bird." instead.
+		
+
+		
+
+		
+
 
 
 [[SCREWDRIVER]]
@@ -136,5 +146,4 @@ Test journal with "w/n/w/examine journal"
 Test southcave with "w/l/s".
 
 Test pedestal with "w/n/w/examine pillow/take pillow".
-
 
