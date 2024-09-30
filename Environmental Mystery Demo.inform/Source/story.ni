@@ -3,7 +3,7 @@
 Release along with interpreter.
 
 When play begins: 
-	say "You wake up alone, underground. You do not know who you are, where you are, or how you got here. You hear a faint sound coming from somewhere outside your room, like it's calling out to you.".
+	say "You wake up alone, somewhere underground. You do not know who you are, where you are, or how you got here. You hear a faint sound coming from somewhere outside your room, like it's calling out to you.".
 
 [[BEDROOM]] [[starting room]]
 
@@ -14,7 +14,7 @@ The bed is an undescribed thing in the Bedroom. The description of the bed is "A
 Instead of taking the bed:
 	say "The rubber mat is too unwieldy to take. Also, you are not feeling tired. You don't need to sleep."
 
-The candle is an undescribed thing in the Bedroom. The description of the candle is "A battery-operated candle that's bolted down into the dirt. You are unable to take it."
+The candle is an undescribed thing in the Bedroom. The description of the candle is "A battery-operated candle that's bolted down into the dirt."
 
 Instead of taking the candle:
 	say "The candle is bolted to the cave floor. You pull with all your might, but it's stuck."
@@ -33,14 +33,14 @@ The fireplace is an undescribed thing in the Central Cave. The description is "A
 Instead of taking the fireplace:
 	say "The fireplace doesn't budge, no matter how much you try to move it."
 
-The book is an undescribed thing on the table. The book can be found. The book is not found. The description is "An old book with weathered edges. The page is flipped open to a spread about canaries. A large illustration of a canary takes up half of the page, its faded wings spread wide in flight. On the opposite page, there is a section about the history of canaries in coal mines. Something about it tugs at your curiosity."
+The book is an undescribed thing on the table. The book can be found. The book is not found. The description is "An old book with weathered edges. The page is flipped open to a spread about canaries. A large illustration of a canary takes up half of the page, its faded wings spread wide in flight. On the opposite page, there is a section about the history of canaries. Something about it tugs at your curiosity."
 
 Instead of taking the book: [[adds a little bit of context/extra dialogue for later discovery of the iron canary]]
 	now the book is found;
-	say "You find some useful information in the book and store it away for safekeeping.".
+	say "You read that canaries have historically been used by coal miners to alert them of potential carbon monoxide poisoning. The canaries would get sick before the miners, allowing them to evacuate before it's too late.".
 	
 [[SAFE-- holds flashlight]]
-The safe is an undescribed closed openable container in the Central Cave. The description is "A black rectangular safe. It's locked. [if sticky note is found]You can use the sticky note's combination to open the safe.[end if]"
+The safe is an undescribed closed openable container in the Central Cave. The description is "A black rectangular safe. It's locked. [if sticky note is found]It seems you can open the safe with the combination you found.[end if]"
 
 Instead of opening the safe: 
 	if sticky note is found:
@@ -50,7 +50,7 @@ Instead of opening the safe:
 		say "You can't find a way to open the safe.".
 		
 [[FLASHLIGHT]]
-The flashlight is an undescribed thing in the Central Cave. The flashlight can be found. The flashlight is not found. The description is "A silver flashlight that twists to turn on. You wonder how long it's been sitting in this safe. You also wonder who kept it locked away, and why. It could be useful to take with you."
+The flashlight is an undescribed thing in the Central Cave. The flashlight can be found. The flashlight is not found. The description is "A silver flashlight that twists to turn on. You wonder how long it's been sitting in this safe. You also wonder who kept it locked away, and why. It will probably be useful to have."
 
 
 [[The Corridor]]
@@ -78,7 +78,7 @@ Instead of taking the flesh:
 	say "The flesh is rotting and covered in fungi and insects. You leave it be."
 
 [[RIBCAGE]] [[ew]]
-The ribcage is an undescribed thing in the Supply Closet. The description is "Against your better judgement you take a step forward to investigate the ribcage. In between arches of bone and rotting organs you see what appears to be a screwdriver, lodged between the 4th and 5th rib."
+The ribcage is an undescribed thing in the Supply Closet. The description is "You take a step forward to investigate the ribcage. In between arches of bone and rotting organs you see what appears to be a screwdriver, lodged between the fourth and fifth rib."
 
 Instead of taking the ribcage:
 	say "You do not wish to desicrate the dead. You leave the ribcage be."
@@ -149,13 +149,13 @@ Instead of taking the sticky note:
 	say "You flip the sticky note over. In neat handwriting, the note says 'Trust the Iron Canary' along with a string of numbers. This looks to be the combination of something that's locked.";
 	continue the action.
 
-The work schedule is a thing on the bulletin board. The description is "The work schedule has several names listed on it. There are no new entries past September 30. How long has it been since that day? You're not sure. Your head is feeling fuzzy, like it's wading through a fog of forgotten memories."
+The work schedule is a thing on the bulletin board. The description is "The work schedule has several names listed on it. There are no new entries past September 30. You do not know what day it is currently. How long has it been since that day? You're not sure. Your head is feeling fuzzy, like it's wading through a fog of forgotten memories."
 
-The group picture is a thing on the bulletin board. The description is "The picture shows a group of seven people crouching in front of a dig site. There are five men and two women, all of whom wear a professional smile. You recognize yourself as the one on the far left. The date reads as insert date here. You flip the picture over. It says 'Where have all the children gone?'"
+The group picture is a thing on the bulletin board. The description is "The picture shows a group of seven people crouching in front of a dig site. There are five men and two women, all of whom wear a professional smile. You vaguely recognize yourself as the one on the far left, and flashes of memories of the others begin to resurface. You flip the picture over. It says 'Where have all the children gone?'"
 
 [[South Cave]]
 
-The South Cave is a room. The South Cave is south of the Work Station. "Using your key, you enter the South Cave. It is noticeably colder in this cave than it is in the other rooms. In the center of the room, you see a birdcage on a pedestal. Inside of it, you hear a bird singing."
+The South Cave is a room. The South Cave is south of the Work Station. "Using your key, you enter the South Cave. It is noticeably colder in this cave than it is in the other rooms. In the center of the room, you see a birdcage on a pedestal. Inside of it, you hear singing."
 
 Instead of going to the South Cave:
 	if the key is found:
@@ -172,14 +172,14 @@ Instead of taking the pedestal:
 
 [[BIRDCAGE]] [[how the FUCK do you put a container in a container???]] [[HELPPPPP]]
 
-The birdcage is an undescribed container on the pedestal. The birdcage is openable. The birdcage is closed. The description of the birdcage is "A golden birdcage sitting delicately atop a pedestal. A bird sits inside. There is light at the bottom of the cage that cups the bird in a brilliant white shawl of luminesence. You feel compelled to open it."
+The birdcage is an undescribed container on the pedestal. The birdcage is openable. The birdcage is closed. The description of the birdcage is "A golden birdcage sitting delicately atop a pedestal. You feel compelled to open it."
 
 Instead of taking the birdcage:
 	say "You're unable to separate the birdcage from the pedestal."
 
 [[BIRD]]
 
-A bird is in birdcage. The bird is a closed openable container. The description is "You peer closer to get a better look at the bird. It is not made of feathers and bone, but instead of metal. [if book is found] The bird appears to be made in the likeness of a canary, just like the ones you saw in the book you found in the Central Cave. [end if] Although its body is rigid and artificial, the bird is somehow still able to sing. The sweet, high pitched notes would be beautiful if they were not so grating on your ears. You turn the bird in your hands delicately, and you notice a small engraving on the underside of the bird's belly. It matches the engraving on the key you used to enter this cave. Three screws catch your eye-- one at the top of each wing and one right on the bird's chest. The bird's eyes are hollow, allowing you the slightest peek at the inner machinery. Something seems to be lodged inside the bird's metal body. Perhaps if you find a tool to open the bird, you can find a way to take whatever's inside. [if screwdriver is found]It seems you can use the screwdriver to open it.[end if]"
+A bird is in birdcage. The bird is a closed openable container. The description is "[if birdcage is closed]You open the birdcage to see a bird sitting inside. [end if]There is light at the bottom of the cage that cups the bird in a brilliant white shawl of luminesence. The bird is not made of feathers and bone, but instead of metal. [if book is found] The bird appears to be made in the likeness of a canary, just like the ones you saw in the book you found in the Central Cave.[end if] Although its body is rigid and artificial, the bird is somehow still able to sing. The sweet, high pitched notes would be beautiful if they were not so grating on your ears. You turn the bird in your hands delicately, and you notice a small engraving on the underside of the bird's belly. It matches the engraving on the key you used to enter this cave. Three screws catch your eye-- one at the top of each wing and one right on the bird's chest. The bird's eyes are hollow, allowing you the slightest peek at the inner machinery. Something seems to be lodged inside the bird's metal body. Perhaps if you find a tool to open the bird, you can find a way to take whatever's inside. [if screwdriver is found]It seems you can use the screwdriver to open it.[end if]"
 
 Instead of taking the bird:
 	say "The bird seems to be too delicate to take. You leave it in the birdcage."
