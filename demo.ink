@@ -31,20 +31,23 @@ I'm thirsty too. What should I drink?
     
 == dessert ==
 Let's check the dessert menu. What should I order?
--> desert_menu
+-> dessert_menu
 
-== desert_menu ==
+== dessert_menu ==
 The menu reads...
-* cheesecake
+* (cheesecake) cheesecake
     My favorite! Yippeeeeee
-    ->variables
-* tiramisu
-    That's not on the menu. Try again!!!!
-    ->desert_menu
-+ nothing...watch your calories
-    That's no fun. Order something you coward!! Life is too short to skip dessert. Be happy for once my guy.
-    ->desert_menu
+* (tiramisu) tiramisu
+    Coffee and cream, delicious!
     
++ nothing...
+    ->nothing
+-For dessert, you ordered {cheesecake: cheesecake} {not cheesecake: tiramisu}. //{tiramisu: tiramisu}.
+->variables
+
+== nothing ==
+    That's no fun. Order something you coward!! Life is too short to skip dessert. Be happy for once my guy.
+    ->dessert_menu
 == variables ==
 ~temp pizzaAmount = 0
 
@@ -66,6 +69,17 @@ How many pizzas would you like to order?
 
 {pizzaAmount <=5: Having a small gathering?}
 {pizzaAmount >5: Throwing a big party huh?}
+->memory
+
+== memory ==
+I remember what you ordered for dessert. Would you like to know?
+*[Tell me!] You chose {dessert_menu.cheesecake: cheesecake} {dessert_menu.tiramisu: tiramisu}. //the colon here tells ink to print!
+- I also know how if you ordered "nothing". 
+* {nothing} [I DID order nothing!] You ordered nothing {nothing} time(s). //this locks the choice behind a conditional... prints the VALUE of nothing... tracking how many times that knot has been visited
+* {not nothing} [I never ordered nothing] Correct, your visit to the nothing knot was {nothing}
+-thanks for ordering
+
+
 -> end
 
 == end ==
