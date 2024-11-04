@@ -21,7 +21,7 @@ I'm sitting in the doctor's office. Boooo. The doctor walks in, a clipboard in h
 * [Ashlynn]
 ~ myName = "Ashlynn" //once again this is just a placeholder
 
-- {myName}? Nice to meet you.
+-"{myName}? Nice to meet you."
 "Nice to meet you too," I mumble.
 
 "And can you tell me what you're in for today?"
@@ -78,7 +78,6 @@ I'm sitting in the doctor's office. Boooo. The doctor walks in, a clipboard in h
    THIS IS A TEST PRINT. SYMPTOMSTART = {symptomStart}
 
     ->symptoms
-
 
  
  == next ==
@@ -179,14 +178,51 @@ Okay blah blah blah.
 "So," Lexi says, leaning forward just a smidge. "Tell me about yourself."
 How original, I think to myself. I'm not one to judge, though. It's been an embarrassingly long amount of time since I've been on a date myself. "What do you want to know?"
 "Anything."
+->convoTopics1
+==convoTopics1==
 *[Name]
-    "Er...well, I'm {myName}.
+    "Er...well, I'm {myName}. I'm named after my {myName == "Reginald": grandfather}{myName == "Ashlynn": grandmother}."
     "How interesting!" Lexi gasps.
+    ->convoTopics1
 *[Hobbies]
     "Let's see...I like to..."
     Wait. Damn. What even <i>are</i> my hobbies?
+    **Gaming
+    **Reading
+    **Breakdancing
+    ->convoTopics1
 *[School]
-- here's a gather please stop yelling at me.
+"I'm a senior in college. I study..."
+    **Idk
+    **idk2
+    **idk3
+    ->convoTopics1
+- The conversation slows for a moment. 
+*[Break the silence]
+->LexiDate1
+*[Let the silence linger]
+    Lexi laughs politely. "Aren't you going to ask me about myself?"
+    "..Oh. Right.."
+    ->LexiDate1
+
+==LexiDate1==
+*["Tell me about yourself."]
+    "What do you want to know?" she asks coyly.
+        I shrug. "Whatever."
+        **"Who are you?"
+            "Well, I'm Lexi. I'm sure you know that by now."
+        **"What do you do?"
+            She nods. "I'm what's called an SSRI."
+            ***"What's that?"
+                "(insert the meaning of ssri here i forgor what it is. something something reuptake inhibitor.).
+            ***"Sounds weird."
+                Lexi shrugs her shoulders. "I basically help you regulate your mood. That's all there is to it."
+            ***"Sounds hot."
+                Lexi gives you a look. "Um...okay? I don't see how, but sure." She seems kind of weirded out. Maybe I shouldn't have said that.
+        
+-Anyways.
+    
+    
 
 
 
