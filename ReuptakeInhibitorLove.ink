@@ -16,18 +16,18 @@ I'm sitting in the doctor's office. Boooo. The doctor walks in, a clipboard in h
 ->name
 
 == name ==
-* [Reginald]
+* Reginald
 ~ myName = "Reginald" //this is just a placeholder name I can't think of anything else
-* [Ashlynn]
+* Ashlynn
 ~ myName = "Ashlynn" //once again this is just a placeholder
 
 -"{myName}? Nice to meet you."
 "Nice to meet you too," I mumble.
 
 "And can you tell me what you're in for today?"
-*["I'm looking for treatment help."]
-*["My primary care doctor told me to."]
-*["Fuck if I know, frankly."]
+*"I'm looking for treatment help."
+*"My primary care doctor told me to."
+*"Fuck if I know, frankly."
 
  - "I see. Thank you for coming in." The doctor scribbles something onto a notepad.
  I look around the room.
@@ -107,14 +107,14 @@ She holds out her hand. "Hello, nice to meet you!" she says, grinning.
 *["Got it."]
     The doctor claps his hands. "Perfect! See her every day at the same time. Consistency is key with her."
 -You give the doctor a nod. 
-Lexi gives you a smile. "I look forward to getting to know you, {myName}. I'll see you tonight?"
-*["Yup, looking forward to it, Lexi."]
-*["No, sorry, I'm busy tonight, actually..."]
+Lexi gives you a smile. "I look forward to getting to know you, {myName}."
+*["Looking forward to it, Lexi."]
+*["Sorry, I'm busy tonight, actually..."]
     The doctor tsks his tongue. "No can do! Lexi <i>has</i> to see you every day at around the same time. No ifs, ands, or buts. Got that?"
          **"Yes, doctor."
 -The doctor does a little jig. "Excellent, excellent. Well, I'll leave you two be for now. Have fuuuuuunnnnn!"
 He begins to saunter off, but something makes him stop in his tracks and turn around. "Oh! And one more thing! You can only see her <i>once</i> a day, got it?"
-*"Understood."
+*"Understood." 
 *"W...Why?"
     "You see, {myName}, when you're just starting out, it's important to start with a low...how shall I say...level of (insert thing here.) If you like Lexi, we can talk about you two seeing each other more, but for now, once a day is enough."
             **"Got it."
@@ -126,12 +126,12 @@ Lexi turns to me, a shy smile on her face. "Well," she says, catching your gaze 
 *"Sure."
 *"Uh...yeah."
 
--"Perfect," Lexi grins. "I'll text you." She adds me to her contacts.
+-"Perfect," Lexi grins. "I'll text you." She adds me to her contacts. "I'll see you later!"
 
 
 ->friend
 ==friend==
-Immediately I pull my phone out. You have a missed text from your best friend, (insert name here).
+I sigh and go onto my phone. I have a missed text from my best friend, (insert name here).
 <b><i>"Yo I deadass just woke up...lmk how your doctor's appt goes"</b></i>
 *<b><i>"it went fine"</i></b>
     They reply instantly. <b><i>"so what's the verdict?"</b></i>
@@ -187,14 +187,22 @@ How original, I think to myself. I'm not one to judge, though. It's been an emba
 *[Hobbies]
     "Let's see...I like to..."
     Wait. Damn. What even <i>are</i> my hobbies?
-    **Gaming
-    **Reading
-    **Breakdancing
+    **[Gaming]
+        "I play video games," I say.
+    **[Reading]
+        "I like to read," I say. 
+    **[Breakdancing]
+        "I breakdance," I say. 
+    **[I don't have any hobbies.]
+        "I...I don't really have any hobbies," I confess, turning away. 
+        "You don't?"
+        I shake my head. "Lately, everything I do is just...dull? The stuff I used to enjoy doing doesn't hit the same as it usually does."
+        Lexi's expression shifts, and she nods. "I understand."
     ->convoTopics1
 *[School]
 "I'm a senior in college. I study..."
-    **Idk
-    **idk2
+    **Psychology
+    **Creative Writing
     **idk3
     ->convoTopics1
 - The conversation slows for a moment. 
@@ -202,23 +210,49 @@ How original, I think to myself. I'm not one to judge, though. It's been an emba
 ->LexiDate1
 *[Let the silence linger]
     Lexi laughs politely. "Aren't you going to ask me about myself?"
-    "..Oh. Right.."
+    "..Oh. Right.." Good going, me. This is going just great.
     ->LexiDate1
 
 ==LexiDate1==
-*["Tell me about yourself."]
+*"Tell me about yourself."
+    I really hope she doesn't hear my voice wavering.
     "What do you want to know?" she asks coyly.
         I shrug. "Whatever."
-        **"Who are you?"
-            "Well, I'm Lexi. I'm sure you know that by now."
-        **"What do you do?"
-            She nods. "I'm what's called an SSRI."
-            ***"What's that?"
-                "(insert the meaning of ssri here i forgor what it is. something something reuptake inhibitor.).
+        ->LexiTopic1
+==LexiTopic1==
+*"Who are you?"
+    "Well, I'm Lexi. I'm sure you know that by now."
+            ->LexiTopic1
+*"What do you do?"
+    She nods. "I'm what's called an SSRI."
+        **"What's that?"
+            "It stands for <b>selective seratonin reuptake inhibitor</b>!" Lexi beams proudly. "I basically make it so that happy chemicals 
+            ***"Sounds interesting."
+                Lexi looks pleased. "There's lots more to know about me, but that can wait for the future."
             ***"Sounds weird."
                 Lexi shrugs her shoulders. "I basically help you regulate your mood. That's all there is to it."
             ***"Sounds hot."
                 Lexi gives you a look. "Um...okay? I don't see how, but sure." She seems kind of weirded out. Maybe I shouldn't have said that.
+         -You give her a once-over. She's studying you. "Anything else you want to ask me?" she says, giving you a curious smile.
+                 ->DateQs2
+
+==DateQs2==
+*"Is this your first relationship?"
+    Lexi laughs. "Is that something you're worried about?"
+    **[Yes]
+    "A little," I concede. "I wouldn't call myself an expert on relationships. I...don't want to mess this up."
+    **[No]
+    "Not really," I say, tilting my head. "I'm just curious."
+    
+*"What are our dates going to entail?"
+    "Whatever you'd like," Lexi says with a nonchalant shrug. "I'd like to consider myself...nonintrusive. But ultimately that will depend on you, and how you find yourself enjoying our dates.
+        **What do you mean?
+        
+        
+*"Are you looking for something long-term?"
+    "If this relationship is beneficial to you, then I'm happy to settle for something long term. But right now, we're just trying things out, okay? We don't have to put labels on it yet."
+    L...Labels? I fiddle with my fingers as I try to avert my gaze. I didn't realize she'd jump for that instantly!
+    
         
 -Anyways.
     
