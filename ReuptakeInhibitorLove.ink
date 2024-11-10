@@ -180,13 +180,13 @@ How original, I think to myself. I'm not one to judge, though. It's been an emba
 "Anything."
 ->convoTopics1
 ==convoTopics1==
-*[Name]
-    "Er...well, I'm {myName}. I'm named after my {myName == "Reginald": grandfather}{myName == "Ashlynn": grandmother}."
+*[talk about name]
+    I decide to tell her about my name. Simple enough, right? "Er...well, I'm {myName}. I'm named after my {myName == "Reginald": grandfather}{myName == "Ashlynn": grandmother}."
     "How interesting!" Lexi gasps.
     ->convoTopics1
-*[Hobbies]
-    "Let's see...I like to..."
-    Wait. Damn. What even <i>are</i> my hobbies?
+*[talk about obbies]
+    She probably wants to know what I do for fun. "Let's see...I like..."
+
     **[Gaming]
         "I play video games," I say.
     **[Reading]
@@ -199,23 +199,28 @@ How original, I think to myself. I'm not one to judge, though. It's been an emba
         I shake my head. "Lately, everything I do is just...dull? The stuff I used to enjoy doing doesn't hit the same as it usually does."
         Lexi's expression shifts, and she nods. "I understand."
     ->convoTopics1
-*[School]
-"I'm a senior in college. I study..."
+*[talk about school]
+Telling her about what I study is probably smart. "I'm a senior in college. I study..."
     **Psychology
     **Creative Writing
     **idk3
     ->convoTopics1
-- The conversation slows for a moment. 
+- The conversation slows for a moment as Lexi takes a bite of her food. Talking with someone new like this...man, how long has it been since I've met someone new? I've spent so much time wallowing in whatever the hell is happening that I--
+    Oh, shit. I stayed quiet for too long. Now it's awkward! Lexi looks up at me expectantly.
+    I should do something...
+    
 *[Break the silence]
+I decide to shift the tide of the conversation. "So, Lexi," I say, hoping I don't sound as awkward as I feel. 
+She gives me a nod. "Yes?"
 ->LexiDate1
 *[Let the silence linger]
-    Lexi laughs politely. "Aren't you going to ask me about myself?"
-    "..Oh. Right.." Good going, me. This is going just great.
+    Nope, fuck it, it's too awkward, I'M too awkward! I shovel a bite of food into my mouth hoping that it chokes me. It doesn't work.
+    Lexi coughs. "Aren't you going to ask me about myself?" she asks with a good-natured smile on her face.
+    "..Oh. Right.." Good going, me. This is going just great. Awkwardly I shuffle in my seat before asking:
     ->LexiDate1
 
 ==LexiDate1==
 *"Tell me about yourself."
-    I really hope she doesn't hear my voice wavering.
     "What do you want to know?" she asks coyly.
         I shrug. "Whatever."
         ->LexiTopic1
@@ -250,7 +255,7 @@ How original, I think to myself. I'm not one to judge, though. It's been an emba
         
         
 *"Are you looking for something long-term?"
-    "If this relationship is beneficial to you, then I'm happy to settle for something long term. But right now, we're just trying things out, okay? We don't have to put labels on it yet."
+    Lexi taps her finger on the table. "If this relationship is beneficial to you, then I'm happy to settle for something long term. But right now, we're just trying things out, okay? We don't have to put labels on it yet."
     L...Labels? I fiddle with my fingers as I try to avert my gaze. I didn't realize she'd jump for that instantly!
     
         
