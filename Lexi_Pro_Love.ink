@@ -18,10 +18,10 @@ I'm sitting in the doctor's office. Boooo. The doctor walks in, a clipboard in h
 ->name
 
 == name ==
-* [Nico]
-~ myName = "Nico"
-* [Jia]
-~ myName = "Jia"
+* [Reginald]
+~ myName = "Reginald" //this is just a placeholder name I can't think of anything else
+* [Ashlynn]
+~ myName = "Ashlynn" //once again this is just a placeholder
 
 -"{myName}? Nice to meet you."
 "Nice to meet you too," I mumble.
@@ -30,7 +30,6 @@ I'm sitting in the doctor's office. Boooo. The doctor walks in, a clipboard in h
 *"I'm looking for treatment help."
 *"My primary care doctor told me to."
 *"Fuck if I know, frankly."
-~ mood = "upset"
 
  - "I see. Thank you for coming in." The doctor scribbles something onto a notepad.
  I look around the room.
@@ -52,27 +51,34 @@ I'm sitting in the doctor's office. Boooo. The doctor walks in, a clipboard in h
 
  ->anxiety
  ==anxiety==
- "I've been anxious lately," I say. "My thoughts keep racing, 
+ "Anxiety."
    ~ symptomStart = symptomStart + 1
+   THIS IS A TEST PRINT. SYMPTOMSTART = {symptomStart}
     ->symptoms
     
 ->depression
 == depression ==
- "I just don't feel like doing anything," I tell him. "Things just feel pointless."
+ "Depression."
     ~ symptomStart = symptomStart + 1
+    THIS IS A TEST PRINT. SYMPTOMSTART = {symptomStart}
 
     ->symptoms
     
 ->panicAttack
 == panicAttack ==
- "I keep having panic attacks. It's exhausting."
+ "Panic attacks."
     ~ symptomStart = symptomStart + 1
+   THIS IS A TEST PRINT. SYMPTOMSTART = {symptomStart}
+
     ->symptoms
     
 ->moodSwings
 == moodSwings ==
  "Mood swings."
     ~ symptomStart = symptomStart + 1
+
+   THIS IS A TEST PRINT. SYMPTOMSTART = {symptomStart}
+
     ->symptoms
 
  
@@ -183,7 +189,7 @@ I'm too nervous to look at Lexi. I have to make a decision.
     Lexi tilts her head. "You don't have to!" she whispers, but I insist.
 *[pay separately]
     Lexi steps ahead of me. "Nope, I got it!" she says, handing her card over to the cashier. 
-    "You don't have to," I mutter, and I can feel the embarrassment burning into my cheeks. I look like a fucking cheapskate right now? Lexi just shakes her head and tells me not to worry about it. Joke's on her, I already have.
+    "You don't have to," I mutter, and I can feel the embarrassment burning into my cheeks. I look like a fucking cheapskate right now? Lexi just shakes her head and tells me not to worry about it.
 -We take our {date1options.froyo: froyo}{date1options.boba: boba} to one of the booths on the far side of the room. 
 
 "So," Lexi says, leaning forward just a smidge. "Tell me about yourself."
@@ -216,12 +222,9 @@ Telling her about what I study is probably smart. "I'm a senior in college. I st
         "...psychology," I tell her. "And before you say anything, yes I majored in it so I could find out what's wrong with me."
         Lexi chuckles. "I've heard that one before. You're not alone."
         "Really?"
-        "You'd be surprised," she says. * Try [it] this example!
+        "You'd be surprised," she says. 
     **[Creative Writing]
         "...creative writing," I say. 
-        Her eyes light up. "Wow, really? What kind of stuff do you write?"
-       "Fiction, mostly." I tell her about the most recent thing I've been working on, a novel about a young woman in the Philippines navigating life as her family's caretaker. Lexi seems fascinated by this. 
-       
         
     **idk3
     ->convoTopics1
@@ -265,10 +268,9 @@ She gives me a nod. "Yes?"
 *"Is this your first relationship?"
     Lexi laughs. "Is that something you're worried about?"
     **[Yes]
-    "A little," I concede. "I don't have a lot of relationship experience and, well...I don't want to mess this up."
+    "A little," I concede. "I wouldn't call myself an expert on relationships. I...don't want to mess this up."
     **[No]
-    "Not really," I say, tilting my head. Her past relationships aren't any of my business at this point. "I'm just curious."
-    ->DateQs2
+    "Not really," I say, tilting my head. "I'm just curious."
     
 *"What are our dates going to entail?"
     "Whatever you'd like," Lexi says with a nonchalant shrug. "I'd like to consider myself...nonintrusive. But ultimately that will depend on you, and how you find yourself enjoying our dates.
@@ -278,7 +280,7 @@ She gives me a nod. "Yes?"
         
 *"Are you looking for something long-term?"
     Lexi taps her finger on the table. "If you're happy, then I'm happy to settle for something long term. But right now, we're just trying things out, okay? We don't have to put labels on it yet."
-    L...Labels? I fiddle with my fingers as I try to avert my gaze. I didn't realize she'd jump for that instantly! "I...um. Okay."
+    L...Labels? I fiddle with my fingers as I try to avert my gaze. I didn't realize she'd jump for that instantly!
     
 - She smiles at me. "{myName}, can I ask you something?"
 "Uh...sure."
