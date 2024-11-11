@@ -16,9 +16,9 @@ I'm sitting in the doctor's office. Boooo. The doctor walks in, a clipboard in h
 ->name
 
 == name ==
-* Reginald
+* [Reginald]
 ~ myName = "Reginald" //this is just a placeholder name I can't think of anything else
-* Ashlynn
+* [Ashlynn]
 ~ myName = "Ashlynn" //once again this is just a placeholder
 
 -"{myName}? Nice to meet you."
@@ -158,10 +158,10 @@ I sigh and go onto my phone. I have a missed text from my best friend, (insert n
 I get home. Lexi's already texted me. 
 
 <b><i>"hi {myName}! this is lexi :) what time and where do you want to go for our date today?" </i></b>
-I think of my options.
+I glance at the time on my phone. It's 3pm. Factoring in the time needed for me to doomscroll and mentally prepare for this date, I think of my options.
 ->date1options
 ==date1options==
-*date option 1
+*"Froyo at 8pm?"
     <b><i>"sounds perfect! see you then."</b></i>
 *date option 2
     <b><i>"sounds perfect! see you then."</b></i>   
@@ -184,7 +184,7 @@ How original, I think to myself. I'm not one to judge, though. It's been an emba
     I decide to tell her about my name. Simple enough, right? "Er...well, I'm {myName}. I'm named after my {myName == "Reginald": grandfather}{myName == "Ashlynn": grandmother}."
     "How interesting!" Lexi gasps.
     ->convoTopics1
-*[talk about obbies]
+*[talk about hobbies]
     She probably wants to know what I do for fun. "Let's see...I like..."
 
     **[Gaming]
@@ -202,7 +202,11 @@ How original, I think to myself. I'm not one to judge, though. It's been an emba
 *[talk about school]
 Telling her about what I study is probably smart. "I'm a senior in college. I study..."
     **Psychology
+        "I study psychology," I tell her. "And before you say anything, yes I majored in it so I could find out what's wrong with me."
+        Lexi chuckles. "I've heard that one before. You're not alone."
     **Creative Writing
+        "I study creative writing," I say. 
+        
     **idk3
     ->convoTopics1
 - The conversation slows for a moment as Lexi takes a bite of her food. Talking with someone new like this...man, how long has it been since I've met someone new? I've spent so much time wallowing in whatever the hell is happening that I--
@@ -255,7 +259,7 @@ She gives me a nod. "Yes?"
         
         
 *"Are you looking for something long-term?"
-    Lexi taps her finger on the table. "If this relationship is beneficial to you, then I'm happy to settle for something long term. But right now, we're just trying things out, okay? We don't have to put labels on it yet."
+    Lexi taps her finger on the table. "If you're happy, then I'm happy to settle for something long term. But right now, we're just trying things out, okay? We don't have to put labels on it yet."
     L...Labels? I fiddle with my fingers as I try to avert my gaze. I didn't realize she'd jump for that instantly!
     
         
