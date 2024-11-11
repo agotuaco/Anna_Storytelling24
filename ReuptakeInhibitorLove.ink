@@ -1,6 +1,7 @@
 VAR myName = ""
 VAR symptomStart = 0
 VAR mood = ""
+VAR lexiMood = ""
 I'm sitting in the doctor's office. Boooo. The doctor walks in, a clipboard in hand. 
 
 "Hello," he says with a faint smile. "How are you doing today?"
@@ -12,6 +13,7 @@ I'm sitting in the doctor's office. Boooo. The doctor walks in, a clipboard in h
     I wouldn't <i>be</i> in the hospital if I was feeling fine, would I?
     He chuckles. "That is fair and valid."
     I shrug my shoulders.
+~ mood = "upset"
 - The doctor looks at his clipboard. "Please tell me your name."
 ->name
 
@@ -157,27 +159,42 @@ I sigh and go onto my phone. I have a missed text from my best friend, (insert n
 ==prepdate1==
 I get home. Lexi's already texted me. 
 
-<b><i>"hi {myName}! this is lexi :) what time and where do you want to go for our date today?" </i></b>
+<b><i>"hi {myName}! this is lexi :) where do you want to go for our date today?" </i></b>
 I glance at the time on my phone. It's 3pm. Factoring in the time needed for me to doomscroll and mentally prepare for this date, I think of my options.
 ->date1options
 ==date1options==
-*"Froyo at 8pm?"
-    <b><i>"sounds perfect! see you then."</b></i>
-*date option 2
-    <b><i>"sounds perfect! see you then."</b></i>   
+*(froyo)"Froyo?"
+    <b><i>"froyo sounds perfect! see you then."</b></i>
+*(boba)"Boba?"
+    <b><i>"boba sounds perfect! see you then."</b></i>   
 *"I don't feel like going out today, actually."
     Lexi replies almost immediately. <b><i>"you heard what the doctor said...i know i might not be what you're looking for, exactly, but at least give me a shot?"</b></i>
     The tiniest amount of guilt shoots into my system. 
     ->date1options
--I spend the rest of the afternoon getting ready to meet her.
+-I spend the rest of the afternoon getting ready to meet her. 
 ->date1
-
 == date1 ==
-Lexi's waiting outside the (insert date location here). She's wearing (whatever the fuck she's wearing). She looks up and waves. "{myName}! Over here!"
-Okay blah blah blah.
+Lexi's already waiting outside the {date1options.froyo: froyo place}{date1options.boba: boba place} when I get there. She's wearing (whatever the fuck she's wearing). She looks up and waves. "{myName}! Over here!"
+*[Greet her]
+"Hi Lexi," I say, giving her the tiniest of waves, and together we walk into the building.
+{date1options.froyo: The froyo place smells faintly of vanilla. She gets original tart with fruit on top and I get chocolate with marshmallows and pretzels.}
+{date1options.boba: The boba place smells faintly of brewed tea and brown sugar. She gets jasmine milk tea with boba and I get passion fruit tea with jelly.}
+
+-We make our way to the register. The cashier rings glances at the two of us. "Are you paying together or separately?"
+
+Shit, it's been so long since I've been on a date that I've completely lost it. Should I pay for the both of us? What's the social norm nowadays?
+I'm too nervous to look at Lexi. I have to make a decision.
+*[pay for the both of us]
+    I take my wallet out. "We're paying together," I say.
+    Lexi tilts her head. "You don't have to!" she whispers, but I insist.
+*[pay separately]
+    Lexi steps ahead of me. "Nope, I got it!" she says, handing her card over to the cashier. 
+    "You don't have to," I mutter, and I can feel the embarrassment burning into my cheeks. I look like a fucking cheapskate right now? Lexi just shakes her head and tells me not to worry about it.
+-We take our {date1options.froyo: froyo}{date1options.boba: boba} to one of the booths on the far side of the room. 
+
 "So," Lexi says, leaning forward just a smidge. "Tell me about yourself."
-How original, I think to myself. I'm not one to judge, though. It's been an embarrassingly long amount of time since I've been on a date myself. "What do you want to know?"
-"Anything."
+Can she see that I'm sweating bullets? It's been an embarrassingly long amount of time since I've been on a date. "What do you want to know?" I manage to ask.
+She takes a {date1options.froyo: bite of her froyo}{date1options.boba: sip of her drink}. "Anything."
 ->convoTopics1
 ==convoTopics1==
 *[talk about name]
@@ -188,24 +205,26 @@ How original, I think to myself. I'm not one to judge, though. It's been an emba
     She probably wants to know what I do for fun. "Let's see...I like..."
 
     **[Gaming]
-        "I play video games," I say.
+        "...playing video games," I say. 
     **[Reading]
-        "I like to read," I say. 
+        "...reading," I say. 
     **[Breakdancing]
-        "I breakdance," I say. 
+        "...breakdancing," I say. 
     **[I don't have any hobbies.]
-        "I...I don't really have any hobbies," I confess, turning away. 
+        "...actually, I... don't really have any hobbies," I confess, turning away. 
         "You don't?"
         I shake my head. "Lately, everything I do is just...dull? The stuff I used to enjoy doing doesn't hit the same as it usually does."
-        Lexi's expression shifts, and she nods. "I understand."
+        Lexi's expression shifts, and she nods. "I understand. A lot of people I've chatted with are the same."
     ->convoTopics1
 *[talk about school]
 Telling her about what I study is probably smart. "I'm a senior in college. I study..."
-    **Psychology
-        "I study psychology," I tell her. "And before you say anything, yes I majored in it so I could find out what's wrong with me."
+    **[Psychology]
+        "...psychology," I tell her. "And before you say anything, yes I majored in it so I could find out what's wrong with me."
         Lexi chuckles. "I've heard that one before. You're not alone."
-    **Creative Writing
-        "I study creative writing," I say. 
+        "Really?"
+        "You'd be surprised," she says. 
+    **[Creative Writing]
+        "...creative writing," I say. 
         
     **idk3
     ->convoTopics1
@@ -232,7 +251,7 @@ She gives me a nod. "Yes?"
 *"Who are you?"
     "Well, I'm Lexi. I'm sure you know that by now."
             ->LexiTopic1
-*"What do you do?"
+*"What's your job in...all this?"
     She nods. "I'm what's called an SSRI."
         **"What's that?"
             "It stands for <b>selective seratonin reuptake inhibitor</b>!" Lexi beams proudly. "I basically make it so that happy chemicals 
@@ -256,14 +275,44 @@ She gives me a nod. "Yes?"
 *"What are our dates going to entail?"
     "Whatever you'd like," Lexi says with a nonchalant shrug. "I'd like to consider myself...nonintrusive. But ultimately that will depend on you, and how you find yourself enjoying our dates.
         **What do you mean?
-        
+        **Sounds good.
+            
         
 *"Are you looking for something long-term?"
     Lexi taps her finger on the table. "If you're happy, then I'm happy to settle for something long term. But right now, we're just trying things out, okay? We don't have to put labels on it yet."
     L...Labels? I fiddle with my fingers as I try to avert my gaze. I didn't realize she'd jump for that instantly!
     
-        
--Anyways.
+- She smiles at me. "{myName}, can I ask you something?"
+"Uh...sure."
+"What made you decide to see me?"
+
+Oh. Something sinks to the bottom of your stomach. 
+->psychEval
+
+==psychEval==
+
+*"I've been feeling kind of down..."
+*"I've been so anxious..."
+*"Life's just been overwhelming."
+*"...the doctor told me to...???"
+    Lexi laughs. "Well, duh. I knew that much already. I meant why did you see the <i>doctor</i>."
+    "Ah." Whoops.
+    ->psychEval
+
+-Anyways. We finish our food and we get up to leave. We start saying our goodbyes, but Lexi seems like she wants to say something.
+->bigQuestion
+
+==bigQuestion==
+Lexi looks at me. "{myName}, it seems like something else is on your mind."
+I blink. "Does it?"
+"Yeah. Did you want to ask me anything else?"
+I wrack my brain. There <i>are</i> some questions I have, actually...but this is just a first date. Is she gonna think I'm pushing it too far? I mull it over...
+*"What relation do you have to the doctor?
+*Why are you part of this weird treatment plan?"
+*"It's nothing."
+- oh my god just chiillll..
+
+
     
     
 
