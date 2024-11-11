@@ -5,15 +5,14 @@ VAR lexiMood = ""
 I'm sitting in the doctor's office. Boooo. The doctor walks in, a clipboard in hand. 
 
 "Hello," he says with a faint smile. "How are you doing today?"
-*"I'm good."
+*(happy)"I'm good."
 ~ mood ="happy"
     "That is good to hear," the doctor says.
-*"Alright, I guess."
-*"Horrible, thanks."
+*(neutral)"Alright, I guess."
+*(upset)"Horrible, thanks."
     I wouldn't <i>be</i> in the hospital if I was feeling fine, would I?
     He chuckles. "That is fair and valid."
-    I shrug my shoulders.
-~ mood = "upset"
+~  mood = "upset"
 - The doctor looks at his clipboard. "Please tell me your name."
 ->name
 
@@ -52,7 +51,7 @@ I'm sitting in the doctor's office. Boooo. The doctor walks in, a clipboard in h
 
  ->anxiety
  ==anxiety==
- "I've been anxious lately," I say. "My thoughts keep racing, 
+ "I've been anxious lately," I say. "My thoughts keep racing, and I can't relax or concentrate."
    ~ symptomStart = symptomStart + 1
     ->symptoms
     
@@ -65,13 +64,13 @@ I'm sitting in the doctor's office. Boooo. The doctor walks in, a clipboard in h
     
 ->panicAttack
 == panicAttack ==
- "I keep having panic attacks. It's exhausting."
+ "I keep having panic attacks," I say. "It's exhausting."
     ~ symptomStart = symptomStart + 1
     ->symptoms
     
 ->moodSwings
 == moodSwings ==
- "Mood swings."
+ I sigh. "My mood's been really unstable lately."
     ~ symptomStart = symptomStart + 1
     ->symptoms
 
@@ -163,7 +162,7 @@ I glance at the time on my phone. It's 3pm. Factoring in the time needed for me 
     <b><i>"boba sounds perfect! see you then."</b></i>   
 *"I don't feel like going out today, actually."
     Lexi replies almost immediately. <b><i>"you heard what the doctor said...i know i might not be what you're looking for, exactly, but at least give me a shot?"</b></i>
-    The tiniest amount of guilt shoots into my system. 
+    The tiniest amount of guilt shoots into my system. I guess I'd better see her at least once.
     ->date1options
 -I spend the rest of the afternoon getting ready to meet her. 
 ->date1
@@ -221,11 +220,17 @@ Telling her about what I study is probably smart. "I'm a senior in college. I st
         "...creative writing," I say. 
         Her eyes light up. "Wow, really? What kind of stuff do you write?"
        "Fiction, mostly." I tell her about the most recent thing I've been working on, a novel about a young woman in the Philippines navigating life as her family's caretaker. Lexi seems fascinated by this. 
+       "Do you hope to be published someday?" she asks.
+       You think about it.
+        ***"Yes."
+            I tell her that it's a dream I still hold close to me, but it's one that feels more distant than ever. I hold out hope, but it grows uncertain. 
+        ***"No, I don't think so."
+            She seems a little disappointed at that. I tell her that the publishing world is bleak, and that I have little to no shot at making it big. Oh well. It's a truth I came to long ago.
        
         
     **idk3
     ->convoTopics1
-- The conversation slows for a moment as Lexi takes a bite of her food. Talking with someone new like this...man, how long has it been since I've met someone new? I've spent so much time wallowing in whatever the hell is happening that I--
+- The conversation slows for a moment as Lexi takes a {date1options.froyo:bite of her yogurt}{date1options.boba:sip of her boba}. I take a second to marvel at it all. Talking with someone new like this...man, how long has it been since I've met someone new? I've spent so much time wallowing in whatever the hell is happening in my fucked-up and pathetic personal life that I--
     Oh, shit. I stayed quiet for too long. Now it's awkward! Lexi looks up at me expectantly.
     I should do something...
     
@@ -237,6 +242,7 @@ She gives me a nod. "Yes?"
     Nope, fuck it, it's too awkward, I'M too awkward! I shovel a bite of food into my mouth hoping that it chokes me. It doesn't work.
     Lexi coughs. "Aren't you going to ask me about myself?" she asks with a good-natured smile on her face.
     "..Oh. Right.." Good going, me. This is going just great. Awkwardly I shuffle in my seat before asking:
+    ~lexiMood = "hesitant"
     ->LexiDate1
 
 ==LexiDate1==
@@ -249,30 +255,39 @@ She gives me a nod. "Yes?"
     "Well, I'm Lexi. I'm sure you know that by now."
             ->LexiTopic1
 *"What's your job in...all this?"
-    She nods. "I'm what's called an SSRI."
+    She sets down her {date1options.boba: drink}{date1options.froyo: spoon}."I'm what's called an SSRI."
         **"What's that?"
-            "It stands for <b>selective seratonin reuptake inhibitor</b>!" Lexi beams proudly. "I basically make it so that happy chemicals 
-            ***"Sounds interesting."
+            "It stands for <b>selective seratonin reuptake inhibitor</b>!" Lexi beams proudly. "I basically make it so that happy chemicals can flow more easily through your brain."
+            I blink. "Huh?"
+            She waves a hand. "It's a little more complicated than that, but the long and short of it is that I can help make things easier for you."
+            ***(polite)"Sounds interesting."
                 Lexi looks pleased. "There's lots more to know about me, but that can wait for the future."
-            ***"Sounds weird."
+                ~lexiMood = "happy"
+            ***(confused)"Sounds weird."
                 Lexi shrugs her shoulders. "I basically help you regulate your mood. That's all there is to it."
-            ***"Sounds hot."
+                ~lexiMood = "hesitant"
+            ***(creepy)"Sounds hot."
                 Lexi gives you a look. "Um...okay? I don't see how, but sure." She seems kind of weirded out. Maybe I shouldn't have said that.
-         -You give her a once-over. She's studying you. "Anything else you want to ask me?" she says, giving you a curious smile.
+                ~lexiMood = "hesitant"
+         -You give her a once-over. She's studying you. "Anything else you want to ask me?"
                  ->DateQs2
 
 ==DateQs2==
 *"Is this your first relationship?"
-    Lexi laughs. "Is that something you're worried about?"
+    Lexi tilts her head, {LexiTopic1.polite: an amused smile on her face}{LexiTopic1.confused: her brows slightly furrowed}{LexiTopic1.creepy: the slightest hint of concern in her eyes}. "Is that something you're worried about?" 
     **[Yes]
-    "A little," I concede. "I don't have a lot of relationship experience and, well...I don't want to mess this up."
+    I need to be honest with her if I want any hope in this "relationship" working out. "A little," I concede with a sigh. "I don't have a lot of relationship experience and, well...I don't want to mess this up."
+    She sighs. "It's nothing you need to worry about, {myName}. This isn't my first time seeing someone, but that doesn't mean it makes us any less of a relationship."
     **[No]
     "Not really," I say, tilting my head. Her past relationships aren't any of my business at this point. "I'm just curious."
+    Lexi nods. "This isn't my first relationship," she replies. "But 
+    
     ->DateQs2
     
 *"What are our dates going to entail?"
     "Whatever you'd like," Lexi says with a nonchalant shrug. "I'd like to consider myself...nonintrusive. But ultimately that will depend on you, and how you find yourself enjoying our dates.
         **What do you mean?
+        
         **Sounds good.
             
         
@@ -280,8 +295,8 @@ She gives me a nod. "Yes?"
     Lexi taps her finger on the table. "If you're happy, then I'm happy to settle for something long term. But right now, we're just trying things out, okay? We don't have to put labels on it yet."
     L...Labels? I fiddle with my fingers as I try to avert my gaze. I didn't realize she'd jump for that instantly! "I...um. Okay."
     
-- She smiles at me. "{myName}, can I ask you something?"
-"Uh...sure."
+- She smiles at me. "{myName}, can I ask you something? And you don't have to answer if you don't want to yet."
+I don't like the sound of that. "Uh...sure."
 "What made you decide to see me?"
 
 Oh. Something sinks to the bottom of your stomach. 
@@ -290,12 +305,17 @@ Oh. Something sinks to the bottom of your stomach.
 ==psychEval==
 
 *"I've been feeling kind of down..."
-*"I've been so anxious..."
+    
 *"Life's just been overwhelming."
+    I keep it at that. Crying on a first date is probably a huge turn-off and I don't want to take my chances.
+    "I
 *"...the doctor told me to...???"
     Lexi laughs. "Well, duh. I knew that much already. I meant why did you see the <i>doctor</i>."
     "Ah." Whoops.
     ->psychEval
+*"I don't want to talk about it."
+    Lexi nods. "Of course. We don't have to talk about it right now, but in the future, maybe we can?"
+    I give her a shrug. I don't feel like opening up to her this much just yet.
 
 -Anyways. We finish our food and we get up to leave. We start saying our goodbyes, but Lexi seems like she wants to say something.
 ->bigQuestion
